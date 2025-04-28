@@ -57,6 +57,10 @@
     text-decoration: underline;
     font-weight: 500;
   }
+  .about-section a:hover {
+    color: #6b6b6b;
+    transition: 0.5s;
+  }
   
   .profile-image {
     margin-top: 1rem;
