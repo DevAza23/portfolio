@@ -4,13 +4,11 @@
     box-sizing: border-box;
   }
   
-
-  
   .profile-container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 90px;
+    padding: 60px 24px;
   }
   
   .profile-main {
@@ -25,66 +23,98 @@
   }
   
   h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     line-height: 1.1;
   }
   
   .subtitle {
-    font-size: 20px;
-    margin-bottom: 3rem;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: #b0b0b0;
   }
   
   .about-section {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   
   .about-section h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
   
   .about-section p {
     margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #FAFAFA;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #d4d4d4;
   }
   
   .about-section a {
-    color: #fff;
+    color: #60a5fa;
     text-decoration: underline;
     font-weight: 500;
+    transition: color 0.3s;
   }
   .about-section a:hover {
-    color: #6b6b6b;
-    transition: 0.5s;
+    color: #93c5fd;
   }
   
   .profile-image {
     margin-top: 1rem;
+    flex-shrink: 0;
   }
   
   .profile-image img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #222;
   }
   
-  /* Responsive adjustments */
+  /* Tablet */
   @media (max-width: 768px) {
+    .profile-container {
+      padding: 40px 20px;
+    }
+  
     .profile-main {
       flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
     }
     
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     
     .profile-image {
-      align-self: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-section {
+      text-align: left;
+    }
+  }
+
+  /* Small mobile */
+  @media (max-width: 480px) {
+    .profile-container {
+      padding: 30px 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .profile-image img {
+      width: 120px;
+      height: 120px;
     }
   }

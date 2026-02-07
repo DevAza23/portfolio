@@ -1,7 +1,7 @@
 import profile from '../assets/profile.jpg'
 import './nav.css'
 
-function navbar() {
+function Navbar() {
   return (
     <div className="profile-container">
       <div className="profile-main">
@@ -17,17 +17,17 @@ function navbar() {
             
             <p>I love Formula 1, movies, history, and great books.</p>
             
-            <p>if you'd like to connect over a chat, <a href="https://t.me/azamatcaps">chat with me here!</a></p>
+            <p>If you'd like to connect over a chat, <a href="https://t.me/azamatcaps" target="_blank" rel="noopener noreferrer">chat with me here!</a></p>
           </div>
         </div>
         
         <div className="profile-image">
-          <img src={profile} alt="Profile" />
+          <img src={profile} alt="Azamat's profile photo" />
         </div>
       </div>
     </div>
   )
 }
 
-export default navbar
+export default Navbar
 
